@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mpu6050_library_test/Core/Src/MPU.cpp&apos; to &apos;MPU.h&apos;" description="Rename resource &apos;MPU.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/MPU.cpp" name="MPU.h" stamp="1672313268092" updateReferences="true"/>
+</session>

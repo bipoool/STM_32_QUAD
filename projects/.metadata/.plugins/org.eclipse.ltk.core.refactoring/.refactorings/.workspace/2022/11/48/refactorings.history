@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;mpu6050_stm32f407&apos;" deleteContents="true" description="Delete resource &apos;mpu6050_stm32f407&apos;" element1="/mpu6050_stm32f407" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1669311967176"/>&#x0A;<refactoring comment="Delete resource &apos;dronezone&apos;" deleteContents="true" description="Delete resource &apos;dronezone&apos;" element1="/dronezone" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1669401255764"/>
+</session>

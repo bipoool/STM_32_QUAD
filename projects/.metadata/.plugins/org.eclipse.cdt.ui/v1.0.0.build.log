@@ -1,0 +1,27 @@
+21:20:30 **** Incremental Build of configuration Debug for project v1.0.0 ****
+make -j16 all 
+arm-none-eabi-g++ "../Core/Src/DZMPU.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/DZMPU.d" -MT"Core/Src/DZMPU.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/DZMPU.o"
+arm-none-eabi-g++ "../Core/Src/DZMPU_test.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/DZMPU_test.d" -MT"Core/Src/DZMPU_test.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/DZMPU_test.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/DZMPU.cpp: In member function 'float DZ_MPU::getGyroResolution(uint8_t)':
+../Core/Src/DZMPU.cpp:218:1: warning: control reaches end of non-void function [-Wreturn-type]
+  218 | }
+      | ^
+../Core/Src/DZMPU.cpp: In member function 'float DZ_MPU::getAccResolution(uint8_t)':
+../Core/Src/DZMPU.cpp:245:1: warning: control reaches end of non-void function [-Wreturn-type]
+  245 | }
+      | ^
+arm-none-eabi-g++ -o "v1.0.0.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/bipoool/Desktop/stm32/projects/v1.0.0/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="v1.0.0.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: v1.0.0.elf
+ 
+arm-none-eabi-size   v1.0.0.elf 
+arm-none-eabi-objdump -h -S  v1.0.0.elf  > "v1.0.0.list"
+   text	   data	    bss	    dec	    hex	filename
+  30588	    484	   1740	  32812	   802c	v1.0.0.elf
+Finished building: default.size.stdout
+ 
+Finished building: v1.0.0.list
+ 
+
+21:20:30 Build Finished. 0 errors, 2 warnings. (took 476ms)
+

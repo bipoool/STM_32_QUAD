@@ -1,0 +1,10 @@
+02:39:50 **** Incremental Build of configuration Debug for project mpu6050_stm32f407 ****
+make -j16 all 
+arm-none-eabi-size   mpu6050_stm32f407.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39796	    160	   3664	  43620	   aa64	mpu6050_stm32f407.elf
+Finished building: default.size.stdout
+ 
+
+02:39:50 Build Finished. 0 errors, 0 warnings. (took 233ms)
+

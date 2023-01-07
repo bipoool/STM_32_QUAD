@@ -1,17 +1,10 @@
-04:43:45 **** Incremental Build of configuration Debug for project UART_COM ****
+01:07:19 **** Incremental Build of configuration Debug for project UART_COM ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "UART_COM.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/bipoool/Desktop/stm32/projects/UART_COM/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_COM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: UART_COM.elf
- 
 arm-none-eabi-size   UART_COM.elf 
-arm-none-eabi-objdump -h -S  UART_COM.elf  > "UART_COM.list"
    text	   data	    bss	    dec	    hex	filename
-   8060	     20	   1636	   9716	   25f4	UART_COM.elf
+  29716	    492	   1748	  31956	   7cd4	UART_COM.elf
 Finished building: default.size.stdout
  
-Finished building: UART_COM.list
- 
 
-04:43:46 Build Finished. 0 errors, 0 warnings. (took 322ms)
+01:07:19 Build Finished. 0 errors, 0 warnings. (took 223ms)
 
